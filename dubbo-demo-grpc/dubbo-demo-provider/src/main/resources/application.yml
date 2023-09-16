@@ -1,0 +1,12 @@
+dubbo:
+  application:
+    # 指定名称
+    name: dubbo-demo-grpc-provider
+  protocol:
+    # 协议
+    name: grpc
+    # 自动分配端口号
+    port: -1
+  registry:
+    # 注册中心地址
+    address: zookeeper://${zookeeper.address:127.0.0.1}:2181
